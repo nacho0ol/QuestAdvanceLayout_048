@@ -42,7 +42,7 @@ fun ActivitasPertama(modifier: Modifier){
 
         Text(
             text = stringResource(id= R.string.univ),
-            fontSize = 18.sp
+            fontSize = 16.sp
         )
 
         Spacer(modifier = Modifier.height(height = 25.dp))
