@@ -75,6 +75,12 @@ fun WarkopAnabul(modifier: Modifier){
             color = colorResource(id = R.color.ijoTua)
         )
 
+        Text(
+            text = stringResource(id = R.string.username),
+            fontSize = 16.sp,
+            color = Color.Gray
+        )
+
 
 
     }
