@@ -102,7 +102,9 @@ fun WarkopAnabul(modifier: Modifier){
 
         WarkopMenuButton(
             text = stringResource(id = R.string.capybara),
-
+            painter = painterResource(id = R.drawable.capybaraboba_removebg_preview),
+            backgroundColor = colorResource(id = R.color.ijoMuda),
+            contentColor = colorResource(id = R.color.ijoTua)
         )
 
 
@@ -158,3 +160,4 @@ fun WarkopMenuButton (
 
     }
 }
+
