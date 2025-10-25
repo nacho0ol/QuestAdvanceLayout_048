@@ -48,7 +48,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun WarkopAnabul(modifier: Modifier){
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .background(Color.White)
             .padding(horizontal = 24.dp),
@@ -131,7 +131,7 @@ fun WarkopAnabul(modifier: Modifier){
             contentColor = colorResource(id = R.color.ijoTua)
         )
 
-        Spacer(modifier = Modifier.height(height = 32.dp))
+        Spacer(modifier = Modifier.weight(1f))
 
         Box(
             modifier = Modifier.fillMaxWidth(),
@@ -163,15 +163,13 @@ fun WarkopAnabul(modifier: Modifier){
             }
         }
 
-        Spacer(modifier = Modifier.weight(1f))
+        Spacer(modifier = Modifier.height(8.dp))
         Text(
             text = stringResource(id = R.string.copyright),
             fontSize = 12.sp,
             color = colorResource(id = R.color.ijoTua),
             modifier = Modifier.padding(bottom = 24.dp)
         )
-
-
 
     }
 }
