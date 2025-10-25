@@ -81,6 +81,8 @@ fun WarkopAnabul(modifier: Modifier){
             color = Color.Gray
         )
 
+        Spacer(modifier = Modifier.height(height = 8.dp))
+
 
 
     }
