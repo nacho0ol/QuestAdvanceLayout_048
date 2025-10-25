@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestAdvanceLayout_048Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ActivitasPertama(
+                    WarkopAnabul(
 
                         modifier = Modifier.padding(innerPadding)
                     )
