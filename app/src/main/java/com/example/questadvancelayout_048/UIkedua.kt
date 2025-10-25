@@ -116,6 +116,14 @@ fun WarkopAnabul(modifier: Modifier){
             contentColor = colorResource(id = R.color.ijoTua)
         )
 
+        Spacer(modifier = Modifier.height(height = 16.dp))
+
+        WarkopMenuButton(
+            text = stringResource(id = R.string.kelinci),
+            painter = painterResource(id = R.drawable.rabbit_removebg_preview),
+            backgroundColor = colorResource(id = R.color.ijoMuda),
+            contentColor = colorResource(id = R.color.ijoTua)
+        )
 
 
     }
