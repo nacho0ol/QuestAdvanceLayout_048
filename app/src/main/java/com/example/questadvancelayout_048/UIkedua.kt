@@ -121,6 +121,14 @@ fun WarkopMenuButton (
             containerColor = backgroundColor
         )
     ){
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 20.dp)
+        ){
+
+        }
 
     }
 }
