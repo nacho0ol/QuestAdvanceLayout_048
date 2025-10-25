@@ -127,7 +127,13 @@ fun WarkopMenuButton (
                 .fillMaxSize()
                 .padding(horizontal = 20.dp)
         ){
+            Image(
+                painter = painter,
+                contentDescription = text,
+                modifier = Modifier.size(30.dp)
+            )
 
+            Spacer(modifier = Modifier.width(width = 16.dp))
         }
 
     }
