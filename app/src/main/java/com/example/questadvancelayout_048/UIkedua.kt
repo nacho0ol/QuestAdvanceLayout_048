@@ -186,7 +186,7 @@ fun WarkopAnabul(modifier: Modifier){
                     containerColor = colorResource(id = R.color.ijoTua)
                 ),
                 modifier = Modifier
-                    .fillMaxWidth(0.5f)
+                    .fillMaxWidth(0.4f)
                     .height(45.dp)
             ){
 
@@ -221,7 +221,8 @@ fun WarkopMenuButton (
     text: String,
     painter: Painter,
     backgroundColor: Color,
-    contentColor: Color
+    contentColor: Color,
+
 ){
     Card(
         modifier = Modifier
@@ -241,7 +242,7 @@ fun WarkopMenuButton (
             Image(
                 painter = painter,
                 contentDescription = text,
-                modifier = Modifier.size(50.dp)
+                modifier = Modifier.size(60.dp)
             )
 
             Spacer(modifier = Modifier.width(width = 16.dp))
