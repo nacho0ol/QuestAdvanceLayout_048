@@ -17,6 +17,8 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -40,7 +42,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-private val Icons.Filled.ArrowForwardIos: ImageVector
+
 
 @Composable
 fun WarkopAnabul(modifier: Modifier){
@@ -148,7 +150,7 @@ fun WarkopAnabul(modifier: Modifier){
             )
             Spacer(modifier = Modifier.width(8.dp))
             Text(
-                text = stringResource(id = R.string.visit), // <-- GANTI TEKS
+                text = stringResource(id = R.string.visit),
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 fontSize = 16.sp
@@ -198,7 +200,7 @@ fun WarkopMenuButton (
             )
 
             Icon(
-                imageVector = Icons.Default.ArrowForwardIos,
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
                 contentDescription = null,
                 tint = Color.Gray,
                 modifier = Modifier.size(16.dp)
