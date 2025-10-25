@@ -4,6 +4,7 @@ import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -132,30 +133,44 @@ fun WarkopAnabul(modifier: Modifier){
 
         Spacer(modifier = Modifier.height(height = 32.dp))
 
-        Button(
-            onClick = { /* masih kosong hehe */},
-            shape = RoundedCornerShape(50),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = colorResource(id = R.color.ijoTua)
-            ),
-            modifier = Modifier
-                .fillMaxWidth(0.8f)
-                .height(50.dp)
+        Box(
+            modifier = Modifier.fillMaxWidth(),
+            contentAlignment = Alignment.Center
         ){
+            Button(
+                onClick = { /* masih kosong hehe */},
+                shape = RoundedCornerShape(50),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorResource(id = R.color.ijoTua)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth(0.8f)
+                    .height(50.dp)
+            ){
 
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.ArrowForward,
-                contentDescription = stringResource(id = R.string.visit),
-                tint = Color.White
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            Text(
-                text = stringResource(id = R.string.visit),
-                color = Color.White,
-                fontWeight = FontWeight.Bold,
-                fontSize = 16.sp
-            )
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                    contentDescription = stringResource(id = R.string.visit),
+                    tint = Color.White
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(
+                    text = stringResource(id = R.string.visit),
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 16.sp
+                )
+            }
         }
+
+        Spacer(modifier = Modifier.weight(1f))
+        Text(
+            text = stringResource(id = R.string.copyright),
+            fontSize = 12.sp,
+            color = colorResource(id = R.color.ijoTua),
+            modifier = Modifier.padding(bottom = 24.dp)
+        )
+
 
 
     }
@@ -202,7 +217,7 @@ fun WarkopMenuButton (
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
                 contentDescription = null,
-                tint = Color.Gray,
+                tint = Color.White,
                 modifier = Modifier.size(16.dp)
             )
         }
