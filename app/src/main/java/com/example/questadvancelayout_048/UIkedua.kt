@@ -26,6 +26,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -82,6 +83,13 @@ fun WarkopAnabul(modifier: Modifier){
         )
 
         Spacer(modifier = Modifier.height(height = 8.dp))
+
+        Text(
+            text = stringResource(id = R.string.slogan),
+            fontSize = 14.sp,
+            color = colorResource(id = R.color.item),
+            textAlign = TextAlign.Center
+        )
 
 
 
