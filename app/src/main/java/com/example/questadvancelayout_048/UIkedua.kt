@@ -15,15 +15,19 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun WarkopAnabul(modifier: Modifier){
@@ -45,6 +49,7 @@ fun WarkopAnabul(modifier: Modifier){
                 .clip(CircleShape)
         )
 
+
         Spacer(modifier = Modifier.height(height = 24.dp))
 
         Row(
@@ -62,6 +67,13 @@ fun WarkopAnabul(modifier: Modifier){
 
 
         }
+
+        Text(
+            text = stringResource(id = R.string.company_name),
+            fontSize = 28.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(id = R.color.ijoTua)
+        )
 
 
 
