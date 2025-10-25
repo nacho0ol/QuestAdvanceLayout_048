@@ -134,6 +134,14 @@ fun WarkopMenuButton (
             )
 
             Spacer(modifier = Modifier.width(width = 16.dp))
+
+            Text(
+                text = text,
+                fontSize = 16.sp,
+                color = contentColor,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.weight(1f)
+            )
         }
 
     }
