@@ -3,6 +3,7 @@ package com.example.questadvancelayout_048
 import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -62,6 +63,11 @@ fun WarkopAnabul(modifier: Modifier){
             contentDescription = null,
             modifier = Modifier
                 .size(120.dp)
+                .border(
+                    width = 2.dp,
+                    color = colorResource(id = R.color.ijoTua),
+                    shape = CircleShape
+                )
                 .clip(CircleShape)
         )
 
@@ -72,17 +78,50 @@ fun WarkopAnabul(modifier: Modifier){
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
+
         ){
-            Image(painterResource(id = R.drawable.instagram), contentDescription = null, modifier = Modifier.size(40.dp))
-            Spacer(modifier = Modifier.width(width = 20.dp))
-            Image(painterResource(id = R.drawable.tiktok), contentDescription = null, modifier = Modifier.size(40.dp))
-            Spacer(modifier = Modifier.width(width = 20.dp))
-            Image(painterResource(id = R.drawable.whatsapp), contentDescription = null, modifier = Modifier.size(40.dp))
-            Spacer(modifier = Modifier.width(width = 20.dp))
-            Image(painterResource(id = R.drawable.email), contentDescription = null, modifier = Modifier.size(40.dp))
+            Image(painterResource(id = R.drawable.instagram), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+                    .border(
+                        width = 2.dp,
+                        color = colorResource(id = R.color.ijoTua),
+                        shape = CircleShape
+                    ))
+
+            Spacer(modifier = Modifier.width(width = 25.dp))
+
+            Image(painterResource(id = R.drawable.tiktok), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+                    .border(
+                        width = 2.dp,
+                        color = colorResource(id = R.color.ijoTua),
+                        shape = CircleShape
+                    ))
+            Spacer(modifier = Modifier.width(width = 25.dp))
+            Image(painterResource(id = R.drawable.whatsapp), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+                    .border(
+                        width = 2.dp,
+                        color = colorResource(id = R.color.ijoTua),
+                        shape = CircleShape
+                    ))
+            Spacer(modifier = Modifier.width(width = 25.dp))
+            Image(painterResource(id = R.drawable.email), contentDescription = null,
+                modifier = Modifier
+                    .size(40.dp)
+                    .border(
+                        width = 2.dp,
+                        color = colorResource(id = R.color.ijoTua),
+                        shape = CircleShape
+                    ))
 
 
         }
+
+        Spacer(modifier = Modifier.height(height = 24.dp))
 
         Text(
             text = stringResource(id = R.string.company_name),
@@ -97,14 +136,17 @@ fun WarkopAnabul(modifier: Modifier){
             color = Color.Gray
         )
 
-        Spacer(modifier = Modifier.height(height = 8.dp))
+        Spacer(modifier = Modifier.height(height = 20.dp))
 
         Text(
             text = stringResource(id = R.string.slogan),
             fontSize = 14.sp,
             color = colorResource(id = R.color.item),
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.SemiBold
         )
+
+        Spacer(modifier = Modifier.height(height = 20.dp))
 
         WarkopMenuButton(
             text = stringResource(id = R.string.capybara),
@@ -144,8 +186,8 @@ fun WarkopAnabul(modifier: Modifier){
                     containerColor = colorResource(id = R.color.ijoTua)
                 ),
                 modifier = Modifier
-                    .fillMaxWidth(0.8f)
-                    .height(50.dp)
+                    .fillMaxWidth(0.5f)
+                    .height(45.dp)
             ){
 
                 Icon(
@@ -199,25 +241,42 @@ fun WarkopMenuButton (
             Image(
                 painter = painter,
                 contentDescription = text,
-                modifier = Modifier.size(30.dp)
+                modifier = Modifier.size(50.dp)
             )
 
             Spacer(modifier = Modifier.width(width = 16.dp))
 
             Text(
                 text = text,
-                fontSize = 16.sp,
+                fontSize = 18.sp,
                 color = contentColor,
-                fontWeight = FontWeight.SemiBold,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f)
             )
 
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                contentDescription = null,
-                tint = Color.White,
-                modifier = Modifier.size(16.dp)
-            )
+            Box(
+                modifier = Modifier
+                    .size(24.dp)
+                    .clip(CircleShape)
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
+            ){
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                    contentDescription = null,
+                    tint = colorResource(id = R.color.ijoTua),
+                    modifier = Modifier
+                        .size(30.dp)
+                        .border(
+                            width = 2.dp,
+                            color = colorResource(id = R.color.ijoTua),
+                            shape = CircleShape
+                        )
+
+                )
+            }
+
+
         }
 
     }
